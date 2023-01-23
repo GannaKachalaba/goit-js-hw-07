@@ -33,6 +33,12 @@ function onImgClick(evt) {
 
   instance.show();
 
+  gallery.addEventListener("keydown", (event) => {
+    if (event.code === "Escape") {
+      instance.close();
+    }
+  }); 
+
 }
 
 console.log(galleryItems);
